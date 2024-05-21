@@ -74,11 +74,11 @@ if (checkHideHeader()) {
     {
       isAuth? <div className='min-h-screen bg-gray-200 dark:bg-slate-700'>
       <MainSidebar />
-      <div className={`${open ? 'max-lg:blur-xl pointer-events-none' : ''}`}>
+      <div className={''}>
         <MainHeader />
         <main className='lg:ml-[280px]'>{children}</main>
       </div>
-      <MobileButtonNavigation />
+      
     </div>:
       <div className="min-h-screen flex items-center justify-center bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
       <div className="max-w-md w-full space-y-8">
